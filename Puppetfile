@@ -100,3 +100,19 @@ mod 'purplehazech/syslogng'
 # simple ccache module (aka forge test-module)
 mod 'purplehazech/ccache'
 
+# = local modules
+# 
+# == profile
+#
+# profiles contain the implementation logic layer of the stack
+#
+mod 'profile',
+  :path => 'profile'
+
+# == role
+#
+# roles contain the business logic layer of the stack
+#
+mod 'role',
+  :path => 'role'
+
