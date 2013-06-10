@@ -1,0 +1,151 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    puppetlabs/apache (0.6.0)
+      puppetlabs/firewall (>= 0.0.4)
+      puppetlabs/stdlib (>= 2.2.1)
+    puppetlabs/firewall (0.3.1)
+    puppetlabs/mysql (0.6.1)
+      puppetlabs/stdlib (>= 2.2.1)
+    puppetlabs/stdlib (4.1.0)
+    purplehazech/ccache (0.1.0)
+    purplehazech/syslogng (0.1.1)
+      puppetlabs/stdlib (~> 4)
+
+GIT
+  remote: https://github.com/hairmare/puppet-freeradius.git
+  ref: rabe
+  sha: 151db9a0dabdefa3afe980afa505ed239a926c06
+  specs:
+    freeradius (0.0.1)
+
+GIT
+  remote: https://github.com/hairmare/puppet-webapp-config.git
+  ref: master
+  sha: f2d9ba8a25e92ed0ac097687d2baf83113bae181
+  specs:
+    hairmare/webapp_config (1.0.0)
+
+GIT
+  remote: https://github.com/hairmare/puppet-xmpp.git
+  ref: master
+  sha: 7e8b27533d2b8680d5fb6dc5b2cb1dbe3da90f2f
+  specs:
+    xmpp (0.0.1)
+
+GIT
+  remote: https://github.com/hairmare/puppetlabs-mysql.git
+  ref: master
+  sha: 8000041e9f08d94fff237e5cbf37d7e547aabb3c
+  specs:
+    mysql (0.6.1)
+      puppetlabs/stdlib (>= 2.2.1)
+
+GIT
+  remote: https://github.com/puppetlabs/puppetlabs-mcollective.git
+  ref: master
+  sha: 42576e6302ed9a3da43d5da39730585a9d13f6db
+  specs:
+    mcollective (0.2.0)
+      puppetlabs/stdlib (>= 2.1.0)
+
+GIT
+  remote: https://github.com/purplehazech/puppet-activerecord.git
+  ref: master
+  sha: 18fa52b153b23a4042adf98e6ea3ce51ce64a055
+  specs:
+    purplehazech/activerecord (0.1.0)
+      puppetlabs/stdlib (>= 3.2.0)
+
+GIT
+  remote: https://github.com/purplehazech/puppet-layman.git
+  ref: master
+  sha: b6c17c7b0de1048fae4e31c58310c79d2e57b8a0
+  specs:
+    purplehazech/layman (0.0.2)
+      puppetlabs/stdlib (~> 4)
+
+GIT
+  remote: https://github.com/purplehazech/puppet-mediawiki.git
+  ref: master
+  sha: 4eadefd47fc8010b0bd64950f4ff6d4f9ad97f76
+  specs:
+    mediawiki (1.0.0)
+      hairmare/webapp_config (>= 1.0.0)
+      puppetlabs/stdlib (>= 3.2.0)
+      purplehazech/apache (>= 0.5.0)
+      purplehazech/layman (>= 0.0.1)
+
+GIT
+  remote: https://github.com/purplehazech/puppet-puppet.git
+  ref: master
+  sha: 1fd4906a5150e81a1c28ee3ff0c1a79dcf2ed068
+  specs:
+    puppet (0.0.1)
+      purplehazech/activerecord (>= 0.1.0)
+
+GIT
+  remote: https://github.com/purplehazech/puppet-webdavcgi.git
+  ref: master
+  sha: b0b54cf2d3a1df28d107b5809abe0dc04f1be27b
+  specs:
+    webdavcgi (0.2.0)
+      puppetlabs/apache (>= 0.4.0)
+
+GIT
+  remote: https://github.com/purplehazech/puppet-zabbix.git
+  ref: master
+  sha: 334da76e5798b0f0d45d2e730e2abeca2c80776b
+  specs:
+    zabbix (0.0.2)
+      hairmare/webapp_config (>= 1.0.0)
+      puppetlabs/mysql (>= 0.6.1)
+      puppetlabs/stdlib (>= 3.2.0)
+      purplehazech/activerecord (>= 0.1.0)
+      purplehazech/apache (>= 0.5.1)
+
+GIT
+  remote: https://github.com/purplehazech/puppetlabs-apache.git
+  ref: master
+  sha: 3e9e627912a956c393bb526cced226f377be403d
+  specs:
+    purplehazech/apache (0.5.1)
+      puppetlabs/firewall (>= 0.0.4)
+      puppetlabs/stdlib (>= 2.2.1)
+
+GIT
+  remote: https://github.com/saz/puppet-sudo.git
+  ref: master
+  sha: 0141854aad7849bb163647d75f74ae79989f1f52
+  specs:
+    sudo (2.2.0)
+
+PATH
+  remote: profile
+  specs:
+    profile (0.0.1)
+
+PATH
+  remote: role
+  specs:
+    role (0.0.1)
+
+DEPENDENCIES
+  freeradius (>= 0)
+  hairmare/webapp_config (>= 0)
+  mcollective (>= 0)
+  mediawiki (>= 0)
+  mysql (>= 0)
+  profile (>= 0)
+  puppet (>= 0)
+  purplehazech/activerecord (>= 0)
+  purplehazech/apache (>= 0)
+  purplehazech/ccache (>= 0)
+  purplehazech/layman (>= 0)
+  purplehazech/syslogng (>= 0)
+  role (>= 0)
+  sudo (>= 0)
+  webdavcgi (>= 0)
+  xmpp (>= 0)
+  zabbix (>= 0)
+
