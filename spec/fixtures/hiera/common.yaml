@@ -1,0 +1,3 @@
+--- 
+puppet_master: "puppet-master.example.com"
+puppet_couch_classifierdb: "http://puppet-couch.example.com:5984/puppet"
