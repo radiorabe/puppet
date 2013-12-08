@@ -5,11 +5,13 @@
 #
 class profile::puppet::master {
 
-  class { 'puppet':
-    master  => hiera('puppet_master')
-  }
-  class { 'puppet::couch':
-    url     => hiera('puppet_couch_classifierdb'),
-    require => Class['puppet']
+  class {
+    'puppet':
+      master  => hiera('puppet_master');
+    'puppet::couch':
+      url     => hiera('puppet_couch_classifierdb'),
+      require => Class['puppet'];
+    'puppet::storeconfig':
+      require => Class['puppet'];
   }
 }
