@@ -13,5 +13,7 @@ class profile::puppet::master {
       require => Class['puppet'];
     'puppet::storeconfig':
       require => Class['puppet'];
+    '::puppet::master':
+      require => Class['puppet'];
   }
 }
