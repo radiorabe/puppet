@@ -1,3 +1,7 @@
 --- 
 puppet_master: "puppet-master.example.com"
 puppet_couch_classifierdb: "http://puppet-couch.example.com:5984/puppet"
+puppet_xmpp_jid: "test@jabber.example.com"
+puppet_xmpp_password: "secret"
+puppet_xmpp_muc: true
+puppet_xmpp_target: "puppet@conference.jabber.example.com"

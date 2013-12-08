@@ -8,6 +8,12 @@ class profile::puppet::master {
   class {
     'activerecord':
       ;
+    'xmpp':
+      package_name => 'xmpp4r',
+      xmpp_jid      => hiera('puppet_xmpp_jid'),
+      xmpp_password => hiera('puppet_xmpp_password'),
+      xmpp_muc      => hiera('puppet_xmpp_muc'),
+      xmpp_target   => hiera('puppet_xmpp_target');
     'puppet':
       master  => hiera('puppet_master');
     'puppet::couch':
@@ -19,6 +25,9 @@ class profile::puppet::master {
         Class['activerecord']
       ];
     '::puppet::master':
-      require => Class['puppet'];
+      require => [
+        Class['puppet'],
+        Class['xmpp']
+      ];
   }
 }
