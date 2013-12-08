@@ -6,6 +6,7 @@ fixtures:
       repo: "https://github.com/hairmare/puppet-xmpp.git"
       ref: "b6a80e5e1138cee8ea0b30591eeef5731913fa85"
     puppet: "https://github.com/purplehazech/puppet-puppet.git"
+    zabbix: "https://github.com/purplehazech/puppet-zabbix.git"
   symlinks:
     profile: "#{source_dir}/profile"
     role: "#{source_dir}/role"
