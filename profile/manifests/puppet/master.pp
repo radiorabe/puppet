@@ -6,6 +6,8 @@
 class profile::puppet::master {
 
   class {
+    'activerecord':
+      ;
     'puppet':
       master  => hiera('puppet_master');
     'puppet::couch':
