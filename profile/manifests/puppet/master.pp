@@ -14,7 +14,10 @@ class profile::puppet::master {
       url     => hiera('puppet_couch_classifierdb'),
       require => Class['puppet'];
     'puppet::storeconfig':
-      require => Class['puppet'];
+      require => [
+        Class['puppet'],
+        Class['activerecord']
+      ];
     '::puppet::master':
       require => Class['puppet'];
   }
