@@ -8,4 +8,8 @@ class profile::puppet::master {
   class { 'puppet':
     master  => hiera('puppet_master')
   }
+  class { 'puppet::couch':
+    url     => hiera('puppet_couch_classifierdb'),
+    require => Class['puppet']
+  }
 }
