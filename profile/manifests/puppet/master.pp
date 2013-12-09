@@ -1,10 +1,11 @@
 # = Class: profile::puppet::master
 #
-# Set up a puppet master that uses couch for assigning profiles and configuration data.
-# This master also uses jabber for reporting to a muc.
+# Set up a puppet master that uses couch for assigning profiles and
+# configuration data. This master also uses jabber for reporting to
+# a muc.
 #
-# Due to the age of the puppet module this profile needs some configuration in the global
-# scope. Please return these global params from your ENC.
+# Due to the age of the puppet module this profile needs some configuration
+# in the global scope. Please return these global params from your ENC.
 #
 # ````
 #   "puppet_server": "puppet-master.example.com",
@@ -26,7 +27,7 @@ class profile::puppet::master {
     'activerecord':
       ;
     'xmpp':
-      package_name => 'xmpp4r',
+      package_name  => 'xmpp4r',
       xmpp_jid      => hiera('puppet_xmpp_jid'),
       xmpp_password => hiera('puppet_xmpp_password'),
       xmpp_muc      => hiera('puppet_xmpp_muc'),
