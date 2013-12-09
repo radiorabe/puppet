@@ -1,0 +1,6 @@
+--- 
+:backends: yaml
+:hierarchy: common
+:logger: console
+:yaml: 
+  :datadir: ./spec/fixtures/hiera
