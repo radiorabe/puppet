@@ -10,6 +10,7 @@ mod 'puppetlabs/vcsrepo'
 mod 'puppetlabs/git'
 mod 'puppetlabs/mysql'
 mod 'puppetlabs/puppetdb'
+mod 'puppetlabs/apache'
 
 # r10k and some deps
 mod 'croddy/make'
