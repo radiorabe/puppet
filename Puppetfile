@@ -1,8 +1,9 @@
 forge 'forge.puppetlabs.com'
 
 # Various puppetlabs Modules
-mod 'puppetlabs/ntp'
 mod 'puppetlabs/stdlib'
+mod 'puppetlabs/concat'
+mod 'puppetlabs/ntp'
 mod 'puppetlabs/ruby'
 mod 'puppetlabs/gcc'
 mod 'puppetlabs/inifile'
