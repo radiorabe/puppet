@@ -22,6 +22,9 @@ mod 'zack/r10k'
 # r10k only makes sense with mco
 mod 'mcollective', :git => 'https://github.com/puppet-community/puppet-mcollective.git'
 
+# rabbitmq deps
+mod 'nanliu/staging'
+
 # Foreman Modules
 mod 'theforeman/concat_native', :git => 'https://github.com/theforeman/puppet-concat_native'
 mod 'theforeman/dhcp',          :git => 'https://github.com/theforeman/puppet-dhcp'
